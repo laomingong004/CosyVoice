@@ -94,6 +94,9 @@
 We strongly recommend that you download our pretrained `CosyVoice2-0.5B` `CosyVoice-300M` `CosyVoice-300M-SFT` `CosyVoice-300M-Instruct` model and `CosyVoice-ttsfrd` resource.
 
 ``` python
+# NOTE: ModelScope currently expects transformers<5.0.0. If you are running in
+# environments like Google Colab that ship the latest transformers by default,
+# please install a compatible version first via `pip install "transformers<5"`.
 # SDK模型下载
 from modelscope import snapshot_download
 snapshot_download('iic/CosyVoice2-0.5B', local_dir='pretrained_models/CosyVoice2-0.5B')
